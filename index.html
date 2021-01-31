@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f5c28b68e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to My Site</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button id="btn-log" type="button" class="toggler-btn-log" onclick="login()">Login</button>
+                <button id="btn-reg" type="button" class="toggler-btn-reg" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook fa-2x fa-gradient"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x fa-gradient"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x fa-gradient"></i></a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                <button type="submit" class="submit-btn">Log In</button>
+                <a class="link-btn" href="#" onclick="register()">Haven't sign up yet?</a>
+            </form>
+            <form action="#" method="POST" id="register" class="input-group-reg">
+                <input type="text" class="input-field" placeholder="User ID" required name="username">
+                <input type="password" class="input-field" placeholder="Enter Password" required name="password">
+                <input type="email" class="input-field" placeholder="Email Address" required name="email">
+                <input type="checkbox" class="check-box"><span>I agree to the Terms and Services</span>
+                <button type="submit" class="submit-btn">Register</button>
+                <a class="link-btn" href="#" onclick="login()">I already have an account.</a>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

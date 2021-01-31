@@ -1,0 +1,188 @@
+:root{
+    --primary-color : linear-gradient(to right, #ff105f, #ffad06 );
+    --secondary-color : linear-gradient(to right, #ffad06, #ff105f );
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.4)),url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 5% auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px #ff61241f;
+}
+
+.toggler-btn-log{
+    padding: 10px 33px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.toggler-btn-reg{
+    padding: 10px 33px;
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icons{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.social-icons a i{
+    margin: 0 7px;
+    transition: .5s;
+}
+
+.social-icons a i:hover{
+    opacity: .75;
+}
+
+.fa-gradient{
+    background: -webkit-gradient(linear, left bottom, right bottom, from(#ff105f), to(#ffad06));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.link-btn {
+    color: #777;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: auto 55px;
+}
+.link-btn:hover {
+    opacity: .5;
+}
+
+#register .link-btn {
+    color: #777;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: auto 35px;
+}
+
+.input-group-reg{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-reg span{
+    color: #777;
+    font-size: 12px;
+    bottom : 81px;
+    position: absolute;
+}
+
+.input-field{
+    width: 100%;
+    padding : 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #9999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: .2s all ease;
+}
+
+.submit-btn:hover{
+    color: #fff;
+}
+
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom : 82px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+#btn-log{
+    color: #fff;
+    transition: .5s;
+}
+
+#btn-reg{
+    color: #000;
+    transition: .5s;
+}
